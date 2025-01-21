@@ -4,7 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/xiaoxiong/',  // 仓库名称
+  base: './',  // 仓库名称
   plugins: [vue()],
   resolve: {
     alias: {
