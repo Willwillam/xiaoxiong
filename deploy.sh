@@ -9,14 +9,14 @@ npm run build
 # 进入构建输出目录
 cd dist
 
-# 如果你要部署到自定义域名
-# echo 'www.example.com' > CNAME
+# 创建 .nojekyll 防止 GitHub Pages 忽略下划线开头的文件
+touch .nojekyll
 
 git init
 git add -A
 git commit -m 'deploy'
 
-# 如果你要部署在 https://<USERNAME>.github.io/<REPO>
+# 部署到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:Willwillam/xiaoxiong.git main:gh-pages
 
 cd - 
