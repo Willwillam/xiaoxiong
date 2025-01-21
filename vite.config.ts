@@ -32,6 +32,8 @@ export default defineConfig({
       }
     },
     assetsDir: 'assets',
-    sourcemap: true
+    sourcemap: true,
+    outDir: 'dist',
+    emptyOutDir: true
   }
 }) 
