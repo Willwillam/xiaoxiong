@@ -20,9 +20,3 @@
 
 ![预览图](preview.gif)
 # xiaoxiong
-# xiaoxiong
-# xiaoxiong
-# xiaoxiong
-# xiaoxiong
-# xiaoxiong
-# xiaoxiong
