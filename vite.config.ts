@@ -15,9 +15,6 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'index.html')
-      },
       output: {
         chunkFileNames: 'assets/js/[name]-[hash].js',
         entryFileNames: 'assets/js/[name]-[hash].js',
@@ -34,6 +31,7 @@ export default defineConfig({
       }
     },
     minify: 'terser',
-    sourcemap: false
+    sourcemap: false,
+    emptyOutDir: true
   }
 }) 
