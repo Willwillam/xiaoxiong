@@ -15,12 +15,9 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'index.html')
-      },
       output: {
-        chunkFileNames: 'assets/js/[name].js',
-        entryFileNames: 'assets/js/[name].js',
+        chunkFileNames: 'js/[name]-[hash].js',
+        entryFileNames: 'js/[name]-[hash].js',
         assetFileNames: (assetInfo) => {
           const info = assetInfo.name.split('.')
           let extType = info[info.length - 1]
@@ -29,7 +26,7 @@ export default defineConfig({
           } else if (/\.(png|jpe?g|gif|svg|webp)$/i.test(assetInfo.name)) {
             extType = 'images'
           }
-          return `assets/${extType}/[name]-[hash][extname]`
+          return `${extType}/[name]-[hash][extname]`
         }
       }
     },
