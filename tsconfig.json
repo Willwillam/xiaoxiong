@@ -25,7 +25,11 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": ["element-plus/global", "vite/client", "node"],
+    "types": [
+      "element-plus/global",
+      "vite/client",
+      "node"
+    ],
     "verbatimModuleSyntax": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
