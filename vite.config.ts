@@ -19,8 +19,8 @@ export default defineConfig({
         main: path.resolve(__dirname, 'index.html')
       },
       output: {
-        chunkFileNames: 'assets/js/[name]-[hash].js',
-        entryFileNames: 'assets/js/[name]-[hash].js',
+        chunkFileNames: 'assets/js/[name].js',
+        entryFileNames: 'assets/js/[name].js',
         assetFileNames: (assetInfo) => {
           const info = assetInfo.name.split('.')
           let extType = info[info.length - 1]
@@ -34,7 +34,7 @@ export default defineConfig({
       }
     },
     assetsInlineLimit: 0,
-    minify: 'terser',
+    minify: 'esbuild',
     sourcemap: false,
     emptyOutDir: true
   }
