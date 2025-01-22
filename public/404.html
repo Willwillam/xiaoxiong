@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>生日快乐</title>
+    <script type="text/javascript">
+      // 重定向所有请求到 index.html
+      var pathSegments = location.pathname.split('/');
+      var repoName = pathSegments[1]; // 'xiaoxiong'
+      var redirectPath = '/' + repoName + '/';
+      location.replace(redirectPath);
+    </script>
+  </head>
+  <body>
+  </body>
+</html> 
