@@ -706,11 +706,15 @@ onMounted(() => {
 
 .fireworks {
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 600px;
   z-index: 2;
+  pointer-events: none;
   
   .firework {
     position: absolute;
@@ -730,7 +734,7 @@ onMounted(() => {
     }
     
     &:nth-child(1) {
-      left: 20%;
+      left: 30%;
       bottom: 0;
       animation: launch 4s ease-out infinite;
       box-shadow: 0 0 10px 2px #ff69b4;
@@ -738,7 +742,7 @@ onMounted(() => {
     }
     
     &:nth-child(2) {
-      left: 40%;
+      left: 50%;
       bottom: 0;
       animation: launch 4s ease-out 1.5s infinite;
       box-shadow: 0 0 10px 2px #ffd700;
@@ -746,7 +750,7 @@ onMounted(() => {
     }
     
     &:nth-child(3) {
-      left: 60%;
+      left: 70%;
       bottom: 0;
       animation: launch 4s ease-out 3s infinite;
       box-shadow: 0 0 10px 2px #87ceeb;
@@ -761,19 +765,19 @@ onMounted(() => {
     opacity: 0;
   }
   10% {
-    transform: translateY(-30vh) scale(1);
+    transform: translateY(-150px) scale(1);
     opacity: 1;
   }
   20% {
-    transform: translateY(-50vh) scale(0.8);
+    transform: translateY(-250px) scale(0.8);
     opacity: 1;
   }
   30% {
-    transform: translateY(-70vh) scale(0.6);
+    transform: translateY(-350px) scale(0.6);
     opacity: 0;
   }
   100% {
-    transform: translateY(-70vh) scale(0.6);
+    transform: translateY(-350px) scale(0.6);
     opacity: 0;
   }
 }
